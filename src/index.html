@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wether-App</title>
+    <script src="index.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"
+      defer
+    ></script>
+    <!-- 使用 defer 属性 -->
+  </head>
+  <body>
+    <div id="mainContainer">
+      <input type="text" id="cityName" placeholder="Enter city name" />
+      <div id="weather-container">
+        <h1 id="location"></h1>
+        <div id="condition"></div>
+        <div id="temperature"></div>
+        <div id="wind"></div>
+        <div id="humidity"></div>
+        <div id="feelsLike"></div>
+        <div id="error-message" style="color: red;"></div>
+      </div>
+    </div>
+  </body>
+</html>

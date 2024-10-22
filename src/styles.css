@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+#cityName {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #2193b0;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#cityName:focus {
+    border-color: #6dd5ed;
+}
+
+#weather-container {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative; /* 允许绝对定位 */
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+#condition img {
+    width: 50px;
+    height: 50px;
+}
+
+#temperature,
+#wind,
+#humidity,
+#feelsLike {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* 错误消息样式 */
+#error-message {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+    animation: fadeIn 0.5s; /* 渐入动画 */
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    #cityName {
+        width: 90%;
+    }
+    #weather-container {
+        width: 90%;
+    }
+}
